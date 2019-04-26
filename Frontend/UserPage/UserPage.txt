@@ -1,0 +1,1 @@
+This page is for Register, Login page and for show/update user profile
