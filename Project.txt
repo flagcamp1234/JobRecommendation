@@ -1,0 +1,55 @@
+Project 最终分组名单：
+ 
+Backend: Zesheng He, Tengfei Jiang, Shen Li, Jinxian Lin, Xi Ouyang (Coordinator, Team Leader, will do front-end if need any help)
+Frontend: Qian Zhu (Coordinator),  Xidan Xu, Xuan Lin,
+Database: Min boao (will do Front End after week 2)
+ 
+Todo list:
+
+1. User Profile Page, Integration of User Register/Login Page.
+2. Search/Applied/Favored/Recommendation page
+3. Job Detail Page.
+ 
+ 后端：
+1） Utility Methods + creating DB tables (2nd week)
+Utility Methods: 
+      A) Call Indeed Job APIs for job list and single job detail,
+      B) Reuse JSON Parser
+2)   Applied / Liked  Job Methods
+3)   Recommendation Job Methods
+4)    User Profile Methods
+Project Estimation:
+First week: 
+Accomplish the Design Document
+
+Second week: (Push change to GitHub)
+https://github.com/flagcamp?tab=repositories
+
+Backend: 
+1) Define API method parameters, define sample JSON request and response.
+2) Accomplish utility methods such as the method for calling Indeed API and etc.
+Frontend: 
+Create the page with dummy record.
+Database: 
+Create tables for Job Recommendation.
+
+Third week: (We must do the peer review and have our code reviewed by James 老师）
+Backend: 
+Accomplish User Profile API work
+Accomplish Applied Job API work
+Accomplish Liked Job API work
+Accomplish Recommendation API work with hardcoded search term.
+Frontend: 
+Accomplish User Profile page using dummy user API Json request.
+Accomplish Applied/Liked/Search Job page using dummy search API Json Request.
+
+Fourth week:
+Backend:
+Accomplish Recommendation work with search term from Applied Job and Liked Job.
+Frontend:
+Accomplish User Profile page via web service call. 
+Accomplish Applied/Liked/Search job page via web service call 
+Accomplish  Recommendation page via web service call.
+
+Fifth work: 
+Integration Test and Bug Fix.
