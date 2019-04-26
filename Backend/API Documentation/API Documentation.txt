@@ -1,0 +1,19 @@
+
+Please follow the format below for API Documentation
+
+http://opensource.indeedeng.io/api-documentation/docs/job-search/
+Method Name: 
+
+Request Parameters:
+
+Parameter_Name  Data_Type  Required Description  Default_value:  
+
+API Sample Request:
+
+
+API Sample Response: {JSON Format}
+
+
+
+
+
