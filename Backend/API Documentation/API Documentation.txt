@@ -27,7 +27,7 @@ Method: Post
     req = 
     {
       user_id: user_id,
-      favorite: [{
+      like: [{
          api_job_id : api_job_id, 
          job_title : job_title,
          location : location,
@@ -40,7 +40,7 @@ Method: Delete
     url = ./like
     req = {
       user_id: user_id,
-      favorite: [api_job_id]
+      like: [api_job_id]
     }
 
 Parameter_Name  Data_Type  Required Description  Default_value:  
@@ -64,7 +64,7 @@ Method: Post
     req = 
     {
       user_id: user_id,
-      favorite: [{
+      apply: [{
          api_job_id : api_job_id, 
          job_title : job_title,
          location : location,
