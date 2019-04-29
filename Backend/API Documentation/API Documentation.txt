@@ -14,16 +14,16 @@ API Sample Response: {JSON Format}
 
 
 
-Method Name: ./favorite
+Method Name: ./like
 Method: Get
 // request parameters
-    url = ./favorite
+    url = ./like
     params = 'user_id=' + user_id
     req = {}
 
 Method: Post
 //Request Parameters:
-    url = ./favorite
+    url = ./like
     req = 
     {
       user_id: user_id,
@@ -37,7 +37,7 @@ Method: Post
      
 Method: Delete 
 // request parameters
-    url = ./favorite
+    url = ./like
     req = {
       user_id: user_id,
       favorite: [api_job_id]
