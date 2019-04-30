@@ -80,5 +80,32 @@ API Sample Response: {JSON Format}
 {"result" : "SUCCESS"}
 
 
+Method Name: ./search
+Method: Get
+// request parameters
+    url = ./search
+    params = 'search_term=' + search_term & 'location' + location
+    req = {}
+    
+Method: Post
+// request parameters
+    url = ./search
+    req = 
+    {
+      search: [{
+         api_job_id : api_job_id, 
+         job_title : job_title,
+         location : location,
+         job_snippet : job_snippet
+      }]
+    }
+    
+Parameter_Name  Data_Type  Required Description  Default_value:  
+
+API Sample Request:
+
+API Sample Response: {JSON Format}
+{"result" : "SUCCESS"}
+
 
 
