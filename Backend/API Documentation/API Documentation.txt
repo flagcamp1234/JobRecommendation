@@ -84,6 +84,7 @@ API Sample Response: {JSON Format}
 {"result" : "SUCCESS"}
 
 3) Search Jobs via user input
+
 Method Name: ./search
 Method: Get
 // request parameters
@@ -102,29 +103,6 @@ Method: Get
 		 job_description: job_description
  }
 ]
-
-// =======================================================================================================
-Simon's comment: why we need POST method here ??? I assume that only Apply or Like will save records in DB.    
-//========================================================================================================
-Method: Post
-// request parameters
-    url = ./search
-    req = 
-    {
-      search: [{
-         api_job_id : api_job_id, 
-         job_title : job_title,
-         location : location,
-         job_snippet : job_snippet
-      }]
-    }
-    
-Parameter_Name  Data_Type  Required Description  Default_value:  
-
-API Sample Request:
-
-API Sample Response: {JSON Format}
-{"result" : "SUCCESS
 
 
 4) Recommend jobs based on the requirement
