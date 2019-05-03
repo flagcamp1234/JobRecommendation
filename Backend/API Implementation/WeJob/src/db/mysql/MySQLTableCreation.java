@@ -52,6 +52,7 @@ public class MySQLTableCreation {
 					+ "api_job_id VARCHAR(8000) NOT NULL,"
 					+ "user_id int NOT NULL,"
 					+ "job_title VARCHAR(255) NOT NULL,"
+					+ "company_name VARCHAR(255) NOT NULL,"
 					+ "location VARCHAR(255) NOT NULL,"
 					+ "PRIMARY KEY (job_applied_id),"
 					+ "FOREIGN KEY (user_id) REFERENCES users(user_id),"
@@ -64,6 +65,7 @@ public class MySQLTableCreation {
 					+ "api_job_id VARCHAR(8000) NOT NULL,"
 					+ "user_id int NOT NULL,"
 					+ "job_title VARCHAR(255) NOT NULL,"
+					+ "company_name VARCHAR(255) NOT NULL,"
 					+ "location VARCHAR(255) NOT NULL,"
 					+ "PRIMARY KEY (job_applied_id),"
 					+ "FOREIGN KEY (user_id) REFERENCES users(user_id),"
@@ -72,7 +74,7 @@ public class MySQLTableCreation {
 			statement.executeUpdate(sql);
 			
 			// Step 4: insert fake user 1111/3229c1097c00d497a0fd282d586be050
-						sql = "INSERT INTO users VALUES('1111', '3229c1097c00d497a0fd282d586be050', 'John', 'Smith')";
+						sql = "INSERT INTO users VALUES('1111', '3229c1097c00d497a0fd282d586be050', 'johnsmith@gmail.com'";
 						statement.executeUpdate(sql);
 
 			conn.close();
