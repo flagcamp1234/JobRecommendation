@@ -13,7 +13,7 @@ API Sample Request:
 API Sample Response: {JSON Format}
 
 
-
+1) Like and unlike Jobs
 Method Name: ./like
 Method: Get
 // request parameters
@@ -31,6 +31,7 @@ Method: Post
          api_job_id : api_job_id, 
          job_title : job_title,
          location : location,
+		 company  : company_name,
          job_snippet : job_snippet
       }]
      }
@@ -51,6 +52,8 @@ API Sample Response: {JSON Format}
 {"result" : "SUCCESS"}
 
 
+
+2) Apply Jobs
 Method Name: ./apply
 Method: Get
 // request parameters
@@ -68,6 +71,7 @@ Method: Post
          api_job_id : api_job_id, 
          job_title : job_title,
          location : location,
+		 company  : company_name,
          job_snippet : job_snippet
       }]
      }
@@ -79,14 +83,29 @@ API Sample Request:
 API Sample Response: {JSON Format}
 {"result" : "SUCCESS"}
 
-
+3) Search Jobs via user input
 Method Name: ./search
 Method: Get
 // request parameters
     url = ./search
-    params = 'search_term=' + search_term & 'location' + location
+    params = 'search_term=' + search_term & 'location=' + location
     req = {}
-    
+	
+//sample response: list of json object, sample response is below: 
+[
+{
+         api_job_id : api_job_id, 
+         job_title : job_title,
+         location : location,
+		 company  : company_name,
+         job_snippet : job_snippet
+		 job_description: job_description
+ }
+]
+
+// =======================================================================================================
+Simon's comment: why we need POST method here ??? I assume that only Apply or Like will save records in DB.    
+//========================================================================================================
 Method: Post
 // request parameters
     url = ./search
@@ -105,7 +124,30 @@ Parameter_Name  Data_Type  Required Description  Default_value:
 API Sample Request:
 
 API Sample Response: {JSON Format}
-{"result" : "SUCCESS"}
+{"result" : "SUCCESS
+
+
+4) Recommend jobs based on the requirement
+
+Method Name: ./recommend
+Method: Get
+//request parameters
+url = ./recommend
+    params = 'recWeight=' + recommendation_weight & 'useLocation=' + uselocation
+	
+Response
+//sample response: list of json object, sample response is below: 
+[
+{
+         api_job_id : api_job_id, 
+         job_title : job_title,
+         location : location,
+		 company  : company_name,
+         job_snippet : job_snippet
+		 job_description: job_description
+ }
+]
+
 
 
 
